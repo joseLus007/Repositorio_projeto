@@ -1,15 +1,14 @@
 body{
     margin: 0;
-    background-color:black;
+    background-color:rosybrown;
     width: 100%;
 }
 #menu ul{
     margin: auto;
-    border: white 5px solid;
     list-style: none;
     font-family:'Courier New', Courier, monospace;
     font-size: 30px;
-    background-color:salmon;
+    background-color: brown;
 }
 #menu ul li{
     display: inline;
@@ -18,13 +17,14 @@ body{
     padding: 20px 20px;
     display: inline-block;
     color: black;
+    
     text-decoration: none;
 }
 #menu ul li a:hover{
-    color:black;
-    border: black 5px salmon;
-    background-color:red;
-    background-image: url(imagem-3.jpg)
+    color:white;
+    border: black  5px ;
+    
+    
 }
 p{
     margin-left: 650px;
