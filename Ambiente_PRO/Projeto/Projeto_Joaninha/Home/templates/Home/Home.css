@@ -1,0 +1,63 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    background-image: url(imagens/11-imagem.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover ;
+    
+}
+.menu{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 9px 0;
+    text-align: center;
+    background-color: brown;
+    border-bottom:2px solid;
+    /* background-color: brown; */
+}
+header li{
+    display: inline-block;
+    margin: 20px 70px;
+}
+li :hover{
+    color:blanchedalmond;
+}
+header a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+section.content{
+    margin-top:70px;
+}
+.conteudo{
+    text-align: center;
+    
+}
+#img_1{
+    text-align: center;
+    background-repeat: no-repeat;
+    margin: 20px 310px;
+    border: black solid;
+}
+.par{
+    font-size: 40px;
+    text-align: center;
+    color:#ff8106;
+    /* color: #ff2b00; */
+    font-family: 'Kaushan Script', cursive;
+    background-color: rgba(0, 0, 0, 0.342);    
+
+}
+
+
+
+
