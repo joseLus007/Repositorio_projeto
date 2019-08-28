@@ -1,0 +1,87 @@
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    background-image: url(../imagens/12-imagem.jpg);
+    background-repeat: no-repeat;/*para nao repetir a imagem */
+    background-attachment: fixed;
+    background-position: center;/*para fixar imagem e sem modificações da imagem*/
+    background-size: cover;/*para deixar toda imagem ocupar a pagina html*/
+}
+
+.menu{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 9px 0;
+    text-align: center;
+    background-color: brown;
+    border-bottom:2px solid;
+    /* background-color: brown; */
+}
+header li{
+    display: inline-block;
+    margin: 20px 70px;
+}
+li :hover{
+    color:blanchedalmond;
+}
+header a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    border: black 1px solid;
+    width: 460px;
+    height: 138px;
+    background-color: white;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    padding: 0%;
+    text-align: center;
+     
+}
+img{
+    height: 10%;
+    width: 5%;
+    padding: 0%;
+    margin: 0%;
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    border: black 1px solid;
+    position: absolute;
+    background-color: white;
+    transform: translateY(-50%) translateX(-50%);
+    top: 87%;
+    left: 50%;
+    margin: auto;
+}
+
+#mapa{
+    margin-left: 28%;
+    margin-top: 0%; 
+}
+
+h1{
+    color: white;
+    text-align: center;
+    top: 0%;
+}
+
+#titulo{
+    align-content: center;
+    margin-top: 7%
+}
+
