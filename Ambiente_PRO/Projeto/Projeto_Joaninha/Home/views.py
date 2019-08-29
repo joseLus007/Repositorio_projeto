@@ -9,5 +9,5 @@ def QuemSomos(request):
 def Localizacao(request):
     return render(request, 'Home/Contatos.html')
 
-def post_list(request):
-    return render(request, 'list.html')
+def Cardapio(request):
+    return render(request, 'Home/Cardápio_joaninha.html')

@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8"> 
         <title>Joaninha</title>
-        <link rel="icon" href="imagem-2.gif">
+        <link rel="icon" href="{% static 'imagens/bob.png' %}">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">    
         <link rel="stylesheet" href="{% static 'css/Home.css' %}">
         <!-- <link rel="stylesheet" type="text/css" href="Home.css" /> -->
@@ -12,11 +12,11 @@
     <body>
         <!-- https://medium.com/horadecodar/criando-templates-no-django-e-adicionando-css-f200310cca56 -->
         <header>
-            <div class="menu">
+            <div class="menu"> 
                 <nav>
                     <ul>
                         <li><a href="Home.html">HOME</a></li>
-                        <li><a href="#">CARDAPIO</a></li>
+                        <li><a href="Cardápio_joaninha.html">CARDAPIO</a></li>
                         <li><a href="Quem Somos.html">QUEM SOMOS</a></li>
                         <li><a href="Contatos.html">LOCALIZAÇÃO</a></li>
                     </ul>
@@ -27,7 +27,7 @@
                 <div class="par">
                     <p>RESTAURANTE JOANINHA</p>
                     <P>SEJA BEM VINDO</P>
-                    <marquee behavior="" direction="right"><img src="imagens/20-imagem.gif" alt=""></marquee>
+                    <marquee behavior="" direction="right"><img src="{% static 'imagens/20-imagem.gif' %}" alt=""></marquee>
                     <marquee behavior="" direction=""><p>sabor incomparável para satisfazer seu paladar</p></marquee>
                 </div>
         </section>

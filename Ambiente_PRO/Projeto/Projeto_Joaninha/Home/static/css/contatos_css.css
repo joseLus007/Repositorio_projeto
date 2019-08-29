@@ -1,10 +1,10 @@
 
 *{margin: 0;padding: 0;box-sizing: border-box;}
 body{
-    background-image: url(../imagens/12-imagem.jpg);
+    background-image: url(../imagens/11-imagem.jpg);
     background-repeat: no-repeat;/*para nao repetir a imagem */
     background-attachment: fixed;
-    background-position: center;/*para fixar imagem e sem modificações da imagem*/
+    /*background-position: center;/*para fixar imagem e sem modificações da imagem*/
     background-size: cover;/*para deixar toda imagem ocupar a pagina html*/
 }
 

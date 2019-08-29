@@ -1,6 +1,6 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 body{
-    background-image: url(imagens/11-imagem.jpg);
+    background-image: url(../imagens/11-imagem.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover ;
@@ -58,7 +58,7 @@ section.content{
 
 }
 p{
-    margin-bottom: 83px; 
+    margin-bottom: 75px; 
 }
 
 

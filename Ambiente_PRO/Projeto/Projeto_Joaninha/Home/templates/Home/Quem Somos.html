@@ -1,22 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="estilo2.css">
+    <link rel="stylesheet" href="{% static 'css/estilo2.css'%}">
     <title>Quem Somos</title>
-    <link rel="icon" href="imagem-2.gif">
+    <link rel="icon" href="{%static 'imagens/bob.png' %}">
 </head>
 <body> 
-    <div id="menu">
-        <nav >
-            <ul>
-                <li><a href="Home.html">Página Inicial</a></li>
-                <li><a href="#">Cárdapio</a></li>
-                <li><a href="#">Quem Somos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </div>
+    <header>
+        <div class="menu"> 
+            <nav>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="Cardápio_joaninha.html">CARDAPIO</a></li>
+                    <li><a href="Quem Somos.html">QUEM SOMOS</a></li>
+                    <li><a href="Contatos.html">LOCALIZAÇÃO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id=fundo>
     <h1>A Joaninha</h1>
     <div class ="imagens"></div>
     <b><i><p>O estabelecimento teve origem em meados de 2010, o nome inicial era Lanchonete Torres, 
@@ -25,9 +29,10 @@
         Com o passar do tempo a demanda de pedidos no estabelecimento foi crescendo gradativamente, 
         de 20 pedidos atendidos. Hoje, em dia de alta rotatividade chega ao passar da casa dos 100 pedidos. 
         Como os pedidos são feitos via facebook, WhatsApp e verbalmente no estabelecimento.
-        Bom Apetite!
-        Carlos Eduardo da Silva Schendroski.
+        Bom Apetite!   
+        -Carlos Eduardo da Silva Schendroski.
     </p></i></b>
+    </div>
     <script>
          function typeWriter(elemento) {
             const textoArray = elemento.innerHTML.split('');

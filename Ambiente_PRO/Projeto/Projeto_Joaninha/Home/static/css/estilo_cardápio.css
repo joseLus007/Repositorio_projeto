@@ -1,0 +1,63 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    background-image: url(../imagens/10-imagem.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    color:#ff8106;
+    text-align: center;
+}
+h2{
+    color:#ff8106;
+    text-align: left;
+}
+li{
+    color:#ff8106;
+}
+#cardápio{
+    background-image: url(../imagens/10-imagem.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    border: white 1px solid;
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 25%;
+    top: 20%;
+    left: 39%;
+    position: absolute;
+}
+.menu{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 9px 0;
+    text-align: center;
+    background-color: brown;
+    border-bottom:2px solid;
+    /* background-color: brown; */
+}
+header li{
+    display: inline-block;
+    margin: 20px 70px;
+}
+li :hover{
+    color:blanchedalmond;
+}
+header a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
