@@ -70,18 +70,20 @@ h3{
 }
 
 #mapa{
+
     margin-left: 28%;
-    margin-top: 0%; 
+    margin-top: 50px; 
 }
 
 h1{
-    color: white;
+    color: orange;
     text-align: center;
     top: 0%;
 }
 
 #titulo{
     align-content: center;
-    margin-top: 7%
+    margin-top: 10%;/* com o valor de posentagem o titulo fica em maicho da imagem do mapa, usando px o titulo fica embaixo */
+    
 }
 
