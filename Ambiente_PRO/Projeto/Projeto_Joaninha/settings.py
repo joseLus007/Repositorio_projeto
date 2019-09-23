@@ -35,6 +35,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #aplicativo de terceiros
+    'widget_tweaks',
+    # meus aplicativos
     'Projeto_Joaninha.core',
     'Projeto_Joaninha.produto',
     'Projeto_Joaninha.estoque',
@@ -120,3 +123,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+LOGIN_URL='/admin/login/'
+# PARA REDIRECIONAR
+LOGOUT_REDIRECT_URL='produto:Produto_list'
