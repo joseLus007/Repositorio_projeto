@@ -1,36 +1,11 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 body{
-    background-image: url(../imagens/11-imagem.jpg);
+    background-image: url(../imagens/13-imagem.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-}
-h1{
-    color:#ff8106;
-    text-align: center;
-}
-h2{
-    color:#ff8106;
-    text-align: left;
-}
-li{
-    color:#ff8106;
-}
-#cardápio{
-    background-image: url(../imagens/10-imagem.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    text-align: left;
-    border: white 1px solid;
-    padding-right: 2%;
-    padding-left: 2%;
-    width: 25%;
-    top: 20%;
-    left: 39%;
-    position: absolute;
+   
 }
 .menu{
     max-width: 1100px;
@@ -49,6 +24,11 @@ header{
     border-bottom:2px solid;
     /* background-color: brown; */
 }
+header a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
 header li{
     display: inline-block;
     margin: 20px 70px;
@@ -56,8 +36,94 @@ header li{
 li :hover{
     color:blanchedalmond;
 }
-header a{
+
+
+
+/* !!!!!!!!!!!!!!!!! */
+
+form{
     font-size: 16px;
-    text-decoration: none;
-    color: black;
+    background-color: ;
+    height: 300px;
+    text-align: center;
+    
+    padding: 10px;
+    margin-top: 30px;
 }
+h2{
+    color: ;
+}
+input,textarea{
+    width: 470px;
+    padding: 10px;
+}
+.enviar input{
+    background-color: #069;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 5px;
+    border:1px solid;
+    color: beige;
+    cursor: pointer;
+}
+.enviar input:hover{
+    background-color: #078;
+}
+#center{
+    display: inline-block;
+    padding: 70px;
+    
+    background-color: crimson;
+}
+#cardapio{
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 300px;
+    
+    width: 260px;
+    background: blue;
+    display: inline-block;    
+}
+h1{
+    text-align: center;
+}
+li{
+    list-style-type: none;
+    color: beige;
+    font-size: 20px;
+
+    
+}
+ul{
+    padding-left: 20px;
+}
+
+
+#centero{
+    background-color: ;
+    display: inline-block;
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-left:  300px;
+    border: black solid 2px;
+    padding: 10px;
+    
+  
+}
+#centert{
+    
+    background-color: ;
+    display: inline-block;
+   
+    padding-bottom:150px ;
+    padding-top:0px ;
+
+}
+
+
+
+
+
+
+

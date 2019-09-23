@@ -8,21 +8,30 @@
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no" />
     <link rel="icon" type="imagem/png" href="{% static 'imagens/bob.png'%}"/>
     <link rel="stylesheet" href="{% static 'css/estilo_cardapio.css' %}">
+    <script>
+        window.onload=function(){
+            document.getElementById('concluido').onclick=function(){
+                alert("enviado")
+            }
+            
+
+        }
+    </script>
 </head>
 <body>
     <header>
             <div class="menu"> 
                 <nav>
                     <ul>
-                        <li><a href="Home.html">HOME</a></li>
-                        <li><a href="Cardápio_joaninha.html">CARDAPIO</a></li>
-                        <li><a href="Quem Somos.html">QUEM SOMOS</a></li>
-                        <li><a href="Contatos.html">LOCALIZAÇÃO</a></li>
+                        <li><a href="{% url 'home:Home' %}">HOME</a></li>
+                        <li><a href="{% url 'home:Cardapio' %}">CARDAPIO</a></li>
+                        <li><a href="#">QUEM SOMOS</a></li>
+                        <li><a href="{% url 'home:Localizacao' %}">LOCALIZAÇÃO</a></li>
                     </ul>
                 </nav>
             </div>
     </header>
-    <div id="cardápio">
+    <div id="centero">
         <h1>Cardápio</h1>
         <ul><h2>Pratos:</h2>
             <li>Virado a paulista</li>
@@ -45,6 +54,42 @@
             <li>Alface e pepino</li>
             <li>Repolho e cenoura</li>
         </ul>
+
+    </div>
+    <div id=centert>
+        <form action="">
+            <h2>Pedido</h2>
+            <br>
+            <p class="nome">
+                <input type="text" name="nome" placeholder="Informe seu Prato" required="required">
+            </p>
+            <br>
+            <p class="acom">
+                <input type="text" name="acompanhamento" placeholder="Informe seu Acompanhamentos"  >
+            </p>
+            <br>
+            <p class="sal">
+                <input type="text" name="saladas" placeholder="Informe sua escolha">
+            </p>
+            <br>
+            <p class="sal">
+                <input type="text" name="cliente" placeholder="Informe sue Nome" required="required">
+            </p>
+            <br>
+            <p class="sal">
+                <input type="email" name="email" placeholder="informe o E-mail" required="required">
+            </p>
+            <br>
+            <p class="sal">
+                <input type="text" name="Contato" placeholder="informe numero de Contato" required="required">
+            </p>
+                
+            <br>
+            <p class="enviar">
+                <input type="submit"name="Concluido" value="Concluido" id="concluido">
+            </p>
+        </form>
+        
     </div>
 </body>
 </html>

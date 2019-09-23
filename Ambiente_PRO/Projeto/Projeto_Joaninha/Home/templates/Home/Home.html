@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">    
         <link rel="stylesheet" href="{% static 'css/Home.css' %}">
         <!-- <link rel="stylesheet" type="text/css" href="Home.css" /> -->
+        
     </head>
     <body>
         {% block conteudo %}
@@ -16,10 +17,10 @@
             <div class="menu"> 
                 <nav>
                     <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="{% url ':Cardapio' %}">CARDAPIO</a></li>
-                        <li><a href="somos">QUEM SOMOS</a></li>
-                        <li><a href="local">LOCALIZAÇÃO</a></li>
+                        <li><a href="{% url 'home:Home' %}">HOME</a></li>
+                        <li><a href="{% url 'home:Cardapio' %}">CARDAPIO</a></li>
+                        <li><a href="#">QUEM SOMOS</a></li>
+                        <li><a href="{% url 'home:Localizacao' %}">LOCALIZAÇÃO</a></li>
                     </ul>
                 </nav>
             </div>

@@ -4,7 +4,7 @@ def Home(request):
     return render(request,'Home/Home.html')
 
 def QuemSomos(request):
-    return render(request,'Home/Quem Somos.html')
+    return render(request,'Home/QuemSomos.html')
 
 def Localizacao(request):
     return render(request, 'Home/Contatos.html')

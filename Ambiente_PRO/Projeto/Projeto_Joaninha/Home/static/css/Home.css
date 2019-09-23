@@ -42,13 +42,9 @@ section.content{
     text-align: center;
     
 }
-#img_1{
-    text-align: center;
-    background-repeat: no-repeat;
-    margin: 20px 310px;
-    border: black solid;
-}
+
 .par{
+    padding-top:4px ;
     font-size: 40px;
     text-align: center;
     color:#ff8106;
@@ -57,9 +53,7 @@ section.content{
     background-color: rgba(0, 0, 0, 0.342);    
 
 }
-p{
-    margin-bottom: 75px; 
-}
+
 
 
 
