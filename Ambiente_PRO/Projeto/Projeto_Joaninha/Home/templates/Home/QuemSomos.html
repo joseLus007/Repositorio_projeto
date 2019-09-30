@@ -1,25 +1,27 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href= estilo_quem_somos.css>
+    <link rel="stylesheet" href= "{% static 'css/estilo_quem_somos.css'%}">
     <title>Quem Somos</title>
-    <link rel="icon" href=incone-1.gif>
+    <link rel="icon" type="imagem/png" href="{% static 'imagens/bob.png'%}"/>
 </head>
 <body> 
     <header>
         <div class="menu"> 
             <nav>
                 <ul>
-                    <li><a href="Home.html">HOME</a></li>
-                    <li><a href="Cardápio_joaninha.html">CARDAPIO</a></li>
-                    <li><a href="QuemSomos.html">QUEM SOMOS</a></li>
-                    <li><a href="Contatos.html">LOCALIZAÇÃO</a></li>
+                    <li><a href="{% url 'home:Home' %}">HOME</a></li>
+                    <li><a href="{% url 'home:Cardapio' %}">CARDAPIO</a></li>
+                    <li><a href="{% url 'home:QuemSomos' %}">QUEM SOMOS</a></li>
+                    <li><a href="{% url 'home:Localizacao' %}">LOCALIZAÇÃO</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <div class ="imagens"></div>
+    <div class = "texto">
     <h1>A Joaninha</h1>
     <p>O estabelecimento teve origem em meados de 2010, o nome inicial era Lanchonete Torres, 
         e assim ficou por um tempo, porém quando chegou a 2016 o nome mudou para Restaurante e 
@@ -30,6 +32,7 @@
         Bom Apetite!   
         Carlos Eduardo da Silva Schendroski.
     </p>
+    </div>
     <div class ="fundo"></div>
     <script>
          function typeWriter(elemento) {

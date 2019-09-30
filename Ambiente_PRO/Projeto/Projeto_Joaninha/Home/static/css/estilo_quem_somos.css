@@ -1,6 +1,6 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 body{
-    background-image: url(imagem-25.jpg);
+    background-image: url(../imagens/imagem-25.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;    
@@ -39,8 +39,8 @@ p{
     color: white;
     font-family: 'Kaushan Script', cursive;
     font-size: 15px;
-    margin-top: 200px;
-    margin-right: 200px;
+    margin-top: 30px;
+    margin-right: 100px;
 }
 .imagens{
     width: 550px;
@@ -49,7 +49,6 @@ p{
     text-align: center;
     margin-block-start: 80px;
     margin-left: 50px;
-
     background-size: 100% 100%;
     animation: imagens 20s infinite;
 
@@ -57,25 +56,29 @@ p{
 }
 h1{
     color: #ff8106;
-    text-align: center;
-    margin-top:7%;
+    margin-top:10%;
+   
 }
 @keyframes imagens{
     0%, 16%{
-        background-image: url(imagem-26.jpeg);
+        background-image: url(../imagens/imagem-26.jpeg);
     }
     16%, 32%{
-        background-image: url(imagem-27.jpeg);}
+        background-image: url(../imagens/imagem-27.jpeg);}
     32%, 48%{
-        background-image: url(imagem-28.jpeg);
+        background-image: url(../imagens/imagem-28.jpeg);
     }
     48%, 64%{
-        background-image: url(imagem-29.jpeg);
+        background-image: url(../imagens/imagem-29.jpeg);
     }
     64%, 80%{
-        background-image: url(imagem-30.jpeg);
+        background-image: url(../imagens/imagem-30.jpeg);
     }
     80%, 100%{
-        background-image: url(imagem-31.jpeg);
+        background-image: url(../imagens/imagem-31.jpeg);
     }
+}
+
+.texto{
+    text-align: center;
 }
