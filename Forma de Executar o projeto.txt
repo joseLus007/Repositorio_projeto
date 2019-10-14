@@ -1,10 +1,10 @@
 instalar :
-	pip install django-widget-tweaks -- user
+	pip install django-widget-tweaks --user
  
 depois criar banco de dados:
-	python.py manage.py makemigrations
+	python manage.py makemigrations
 	
-	python.py manage.py migrate
+	python manage.py migrate
 	
 	
 
