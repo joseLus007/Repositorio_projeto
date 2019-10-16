@@ -3,9 +3,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href= "{% static 'css/estilo_quem_somos.css'%}">
+    <link rel="stylesheet" href="{% static 'css/estilo_quem_somos.css'%}">
     <title>Quem Somos</title>
-    <link rel="icon" type="imagem/png" href="{% static 'imagens/bob.png'%}"/>
+    <link rel="icon" href="{% static 'imagens/incone-32.gif'%}"/>
 </head>
 <body> 
     <header>
@@ -14,16 +14,16 @@
                 <ul>
                     <li><a href="{% url 'home:Home' %}">HOME</a></li>
                     <li><a href="{% url 'home:Cardapio' %}">CARDAPIO</a></li>
-                    <li><a href="{% url 'home:QuemSomos' %}">QUEM SOMOS</a></li>
+                    <li><a href="{% url 'home:QuemSomos'%}">QUEM SOMOS</a></li>
                     <li><a href="{% url 'home:Localizacao' %}">LOCALIZAÇÃO</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class ="imagens"></div>
-    <div class = "texto">
+    <center><div class ="borda">
+    <div id ="imagens"></div>
     <h1>A Joaninha</h1>
-    <p>O estabelecimento teve origem em meados de 2010, o nome inicial era Lanchonete Torres, 
+    <p> O estabelecimento teve origem em meados de 2010, o nome inicial era Lanchonete Torres, 
         e assim ficou por um tempo, porém quando chegou a 2016 o nome mudou para Restaurante e 
         Lanchonete Joaninha que foi devido a uma separação de donos.
         Com o passar do tempo a demanda de pedidos no estabelecimento foi crescendo gradativamente, 
@@ -31,19 +31,6 @@
         Como os pedidos são feitos via facebook, WhatsApp e verbalmente no estabelecimento.
         Bom Apetite!   
         Carlos Eduardo da Silva Schendroski.
-    </p>
-    </div>
-    <div class ="fundo"></div>
-    <script>
-         function typeWriter(elemento) {
-            const textoArray = elemento.innerHTML.split('');
-            elemento.innerHTML = '';
-            textoArray.forEach((letra, i) => {
-                setTimeout(() => elemento.innerHTML += letra, 25 * i);
-            });
-        }
-        const titulo = document.querySelector('p');
-        typeWriter(titulo);
-    </script>
+    </p></div></center>
 </body>
 </html>
