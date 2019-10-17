@@ -7,6 +7,11 @@ body{
     
 	 
 }
+
+#resultado{
+    color: black;
+    font-family: 'Volkhov', serif;
+}
 .menu{
     max-width: 1100px;
     margin: 0 auto;
@@ -54,6 +59,22 @@ p{
     margin-right: -10%;
 	
 }
+.borda{
+    width: 80%;
+    height: 540px;
+    
+    border: 3px solid black;
+    
+
+    padding-bottom: 8%;
+    margin-top: 10%;
+    padding-right: 10%;
+    background-color:brown;
+    
+    
+	
+    
+}
 #imagens{
     width: 50%;
     height: 450px;
@@ -67,20 +88,9 @@ p{
    
 	
 }
-.borda{
-    width: 80%;
-    border: 3px solid black;
-    
 
-    padding-bottom: 8%;
-    margin-top: 10%;
-    padding-right: 10%;
-    background-color:brown;
-    
-    
-	
-    
-}
+
+
 #imagens .borda{
     float: left;
     
