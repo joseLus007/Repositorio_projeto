@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'Projeto_Joaninha.produto',
     'Projeto_Joaninha.estoque',
     'Projeto_Joaninha.Home',
+    'Projeto_Joaninha.pedidos',
+    
 ]
 
 MIDDLEWARE = [
