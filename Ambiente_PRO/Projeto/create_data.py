@@ -12,6 +12,7 @@ from Projeto_Joaninha.produto.models import Produto
 
 class Utils:
     ''' Métodos genéricos. '''
+    'para gerar numeros aleatorios'
     @staticmethod
     def gen_digits(max_length):
         return str(''.join(choice(string.digits) for i in range(max_length)))
@@ -26,12 +27,11 @@ class ProdutoClass:
         for produto in produtos:
             data = dict(
                 produto=produto,
-                importado=choice((True, False)),
                 ncm=Utils.gen_digits(8),
                 preco=random() * randint(10, 50),
                 estoque=randint(10, 200),
             )
-            obj = Produto(**data)
+            obj =Produto(**data)
             aux.append(obj)
         Produto.objects.bulk_create(aux)
 
