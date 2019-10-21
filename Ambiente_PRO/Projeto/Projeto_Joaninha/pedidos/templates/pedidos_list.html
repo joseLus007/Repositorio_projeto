@@ -9,6 +9,7 @@
                 <th>Nome do Cliente</th>
                 <th>E-mail</th>
                 <th>Pedido</th>
+                <th>Forma de Pagamento</th>
                 <th >Endereço</th>
                 <th >Numero de contato</th>
             </tr>
@@ -21,6 +22,7 @@
                     <td>
                         <a href="{{ object.get_absolute_url }}">{{ object.lista_pedidos }}</a>
                     </td>
+                    <td>{{object.forma_de_pagamento}}</td>
                     <td>{{object.endereco}}</td>
                     <td>{{object.numero_contato}}</td>
                 </tr>

@@ -10,14 +10,8 @@ def QuemSomos(request):
 def Localizacao(request):
     return render(request, 'Home/Contatos.html')
 
-def CardapioLocal(request):
-    return render(request, 'Home/CardapioLocal.html')
-
 def CardapioEntrega(request):
     return render(request, 'Home/CardapioEntrega.html')
-
-def TipoPedido(request):
-    return render(request, 'Home/Tipo de pedido.html')
 
 def Agradecimentos(request):
     return render(request, 'Home/Agradecimentos.html')

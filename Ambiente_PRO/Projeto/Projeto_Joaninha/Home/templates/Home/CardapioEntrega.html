@@ -15,7 +15,7 @@
                     <nav>
                         <ul>
                             <li><a href="{% url 'home:Home' %}">HOME</a></li>
-                            <li><a href="{% url 'home:TipoPedido' %}">CARDAPIO</a></li>
+                            <li><a href="{% url 'home:CardapioEntrega' %}">CARDAPIO</a></li>
                             <li><a href="{% url 'home:QuemSomos' %}">QUEM SOMOS</a></li>
                             <li><a href="{% url 'home:Localizacao' %}">LOCALIZAÇÃO</a></li>
                         </ul>
@@ -95,8 +95,11 @@
             <label for="Telefone">Telefone:</label><br>
             <input type="tel" name="Telefone" id="Telefone" placeholder="Ex: (11)12345-6789"><br><br>
 
-            <label for="Observacoes">Observações:</label><br>
-            <textarea name="Observacoes" id="Observacoes" cols="30" rows="10"></textarea><br>
+            <label for="Email">Email:</label><br>
+            <input type="text" required="required" minlength="10" placeholder="Ex: teste@mail.com">
+            
+            <br>
+            <br>
 
             <p><button id="Botao" type="submit" onClick="Enviar()">Pedir</button></p>
             <br>

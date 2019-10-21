@@ -18,6 +18,7 @@ class Migration(migrations.Migration):
                 ('nome_cliente', models.CharField(max_length=100, verbose_name='nome_cliente')),
                 ('email', models.CharField(max_length=200, unique=True, verbose_name='E-mail')),
                 ('lista_pedidos', models.CharField(max_length=500, verbose_name='pedidos')),
+                ('forma_de_pagamento',models.CharField(max_length=100, verbose_name='forma_de_pagamento')),
                 ('endereco', models.CharField(max_length=2000, verbose_name='endereço')),
                 ('contato_numero', models.PositiveIntegerField(verbose_name='contato')),
             ],
