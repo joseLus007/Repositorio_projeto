@@ -1,4 +1,5 @@
 from django.shortcuts import render
+import django
 
 def Home(request):
     return render(request,'Home/Home.html')
@@ -9,5 +10,14 @@ def QuemSomos(request):
 def Localizacao(request):
     return render(request, 'Home/Contatos.html')
 
-def Cardapio(request):
-    return render(request, 'Home/Cardápio_joaninha.html')
+def CardapioLocal(request):
+    return render(request, 'Home/CardapioLocal.html')
+
+def CardapioEntrega(request):
+    return render(request, 'Home/CardapioEntrega.html')
+
+def TipoPedido(request):
+    return render(request, 'Home/Tipo de pedido.html')
+
+def Agradecimentos(request):
+    return render(request, 'Home/Agradecimentos.html')

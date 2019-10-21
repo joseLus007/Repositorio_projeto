@@ -9,7 +9,6 @@
     <link rel="icon" type="imagem/png" href="{% static 'imagens/bob.png' %}" />
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/Contatos_css.css' %}" />
-    <script src="main.js"></script>
 </head>
 <body>
     <header>
@@ -17,7 +16,7 @@
             <nav>
                 <ul>
                     <li><a href="{% url 'home:Home' %}">HOME</a></li>
-                    <li><a href="{% url 'home:Cardapio' %}">CARDAPIO</a></li>
+                    <li><a href="{% url 'home:TipoPedido' %}">CARDAPIO</a></li>
                     <li><a href="{% url 'home:QuemSomos' %}">QUEM SOMOS</a></li>
                     <li><a href="{% url 'home:Localizacao' %}">LOCALIZAÇÃO</a></li>
                 </ul>
@@ -31,12 +30,12 @@
         
         <div id=mapa>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1283403629577!2d-46.925979084624366!3d-23.563833684681736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf06e7a47c895f%3A0x595d00c1638713fa!2sR.%20Serra%20do%20Ara%C3%A7a%C3%AD%2C%20177%20-%20Jardim%20Maria%20Judite%2C%20Itapevi%20-%20SP%2C%2006657-630%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1566914432317!5m2!1spt-BR!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
         <h2>Contato: <br><br>          
             Carlos Eduardo da Silva Schendroski. <br>
         <img src="{% static 'imagens/icone_whatsapp.png' %}" rel="icon">WhatsApp: (11) 94774-4878.
         </h2>
-    </div>
-
+        </div>
+        </div>
+       
 </body>
 </html>

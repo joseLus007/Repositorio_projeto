@@ -12,13 +12,15 @@ body{
     color: black;
     font-family: 'Volkhov', serif;
 }
+
+
 .menu{
     max-width: 1100px;
     margin: 0 auto;
     padding:0 2%;
-    
 	
 }
+
 header{
     position: fixed;
     left: 0;
