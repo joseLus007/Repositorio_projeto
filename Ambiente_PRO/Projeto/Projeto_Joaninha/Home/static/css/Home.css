@@ -1,9 +1,11 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 body{
-    background-image: url(../imagens/11-imagem.jpg);
+    
+    background-image: url(../imagens/imagem-32.jpg);  
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    
     background-size:cover ;
+    background-color: rgba(0, 0, 0, 0.698); 
     
 }
 .menu{
@@ -19,9 +21,9 @@ header{
     width: 100%;
     padding: 9px 0;
     text-align: center;
-    background-color: brown;
+    background-color: rgba(165, 42, 42, 0.479);
     border-bottom:2px solid;
-    /* background-color: brown; */
+    
 }
 header li{
     display: inline-block;
@@ -40,6 +42,7 @@ section.content{
 }
 .conteudo{
     text-align: center;
+   
 
     
 }
@@ -51,11 +54,12 @@ section.content{
     color:#ff8106;
     /* color: #ff2b00; */
     font-family: 'Kaushan Script', cursive;
-    background-color: rgba(0, 0, 0, 0.342);    
+        
 
 }
-
-
+p{
+    text-shadow: 2px 5px #000000;
+}
 
 
 
