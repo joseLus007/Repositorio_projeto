@@ -2,7 +2,7 @@
 <!DOCTYPE html> 
 <html>
     <head>
-        <meta charset="utf-8"> 
+        <meta charset="UTF-8"> 
         <title>Joaninha</title>
         <link rel="icon" href="{% static 'imagens/bob.png' %}">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">    
@@ -13,6 +13,7 @@
     <body>
         {% block conteudo %}
         <!-- https://medium.com/horadecodar/criando-templates-no-django-e-adicionando-css-f200310cca56 -->
+        <div id='fundo'>
         <header>
             <div class="menu"> 
                 <nav>
@@ -25,14 +26,16 @@
                 </nav>
             </div>
         </header>
-        <section class="content">
-                <div class="par">
-                    <p>RESTAURANTE JOANINHA</p>
-                    <P>SEJA BEM VINDO</P>
-                    <marquee behavior="" direction="right"><img src="{% static 'imagens/20-imagem.gif' %}" alt=""></marquee>
-                    <marquee behavior="" direction=""><p>sabor incomparável para satisfazer seu paladar</p></marquee>
-                </div>
-        </section>
+                <section class="content">
+                    <div class="par">
+                        <p id="espaço">RESTAURANTE  JOANINHA</p>
+                        <!-- <marquee behavior="" direction="right"><img src="{% static 'imagens/20-imagem.gif' %}" alt=""></marquee> -->
+                        <marquee behavior="" direction="" id="final"><p>sabor incomparável para satisfazer seu paladar</p></marquee>
+                    </div>
+                </section>
+            </div>
+        </div>    
+         
         {% endblock %}
     </body>
 </html>
