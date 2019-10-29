@@ -1,42 +1,17 @@
 
 {% extends 'base.html'%}
-
 {% block content %}
+<style>
+  body{
+  background-image: url(../static/imagens/imagem-1.png);
+  background-size:cover ;
+  background-attachment: fixed;
+
+  }
+
+</style>
 
 <div id="mover">
   <div id="imagem"></div>
-
-</div>
-  
-
-    <style>
-      body{
-      background-image: url(../static/imagens/imagem-1.png);
-      background-size:cover ;
-      background-attachment: fixed;
-  
-      }
-    
-      #imagem{
-        background-image: url(../static/imagens/20-imagem.gif);
-        background-repeat: no-repeat;
-        
-        height: 330px; 
-      }
-      #mover{
-        padding-left: 500px;
-        
-      }
-      #h1{
-        text-align:initial;
-        padding-top:180px;
-        padding-left: 50px;
-        height: 500px;
-        
-        
-        
-      }
-    </style>
-  </div>
 </div>
 {% endblock content%}
