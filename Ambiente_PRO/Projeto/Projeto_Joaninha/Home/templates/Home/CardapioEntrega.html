@@ -49,7 +49,7 @@
         </div>
         <div id="opcoes">
             <form name="pedido" action="{% url 'home:Agradecimentos' %}" method="POST">{% csrf_token %}
-            <h3>Selecione uma ou mais opções para compra: </h3>
+            <h1>Selecione uma ou mais opções para compra: </h1>
             <label for="Prato">Prato:</label><br>
             <select name="Prato" id="prato" autofocus required="required">
                 <option value="">Selecione seu prato</option>

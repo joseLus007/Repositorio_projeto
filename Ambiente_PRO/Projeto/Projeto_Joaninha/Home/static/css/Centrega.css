@@ -1,5 +1,5 @@
 body{
-    background-color:black;
+    background-image: url(../imagens/fundo_cardapio.jpg);
     background-size: cover;
 }
 h1{
@@ -43,36 +43,39 @@ li{
 }
 
 #cardapio{
-    border: thick groove #000000;
+    border: #000000 3px solid;
     background-color:brown;
-    max-width: 600px;
-    margin-top:150px
+    max-width: 45%;
+    margin-top: 5%;
+    display: block;
+    margin-left: 27%;
+    border-radius: 7%;
+    margin-bottom: 2%;
+    background-image: url(../imagens/fundo_cardapio_menu.jpg);
 }
 
 #opcoes{
-    border: thick groove #000000;
+    border: #000000 3px solid;
     background-color:brown;
-    max-width: 600px;
-    margin-left:670px;
-    margin-top:-560px;
+    max-width: 300%;
+    margin-left:27%;
+    margin-right: 27.5%;
     padding:2%;
-}
-
+    display: block;
+    border-radius: 7%;
+    background-image: url(../imagens/fundo_cardapio_menu.jpg);
 }
 .menu{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2%;
-    
+    max-width: 100%;
+}
+#espaço{
+    padding-top:2%;
 }
 header{
-    position: fixed;
-    left: 0;
-    top: 0;
     width: 100%;
-    padding: 9px 0;
+    padding: 5px 0;
     text-align: center;
-    background-color: brown;
+    background-color:rgba(0, 0, 0, 0.609) ;
     border-bottom:2px solid;
 }
 header li{
@@ -85,5 +88,5 @@ li :hover{
 header a{
     font-size: 16px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
