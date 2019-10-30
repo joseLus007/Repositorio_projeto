@@ -1,58 +1,48 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 body{
-    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
+    background-image: url(../imagens/fundo-15.jpg);
     
 	 
 }
 
 #resultado{
-    color: black;
+    color: white;
     font-family: 'Volkhov', serif;
+    text-justify: auto;
 }
 
 
 .menu{
-    max-width: 1100px;
+    max-width: 100%;
     margin: 0 auto;
     padding:0 2%;
 	
 }
-
 header{
-    position: fixed;
-    left: 0;
-    top: 0;
     width: 100%;
-    padding: 9px 0;
+    padding: 5px 0;
     text-align: center;
-    background-color: brown;
+    background-color:rgba(0, 0, 0, 0.609) ;
     border-bottom:2px solid;
-    /* background-color: brown; */
     
-	
 }
 header li{
     display: inline-block;
     margin: 20px 70px;
-    
-	
 }
 li :hover{
     color:blanchedalmond;
-    
-	
 }
 header a{
     font-size: 16px;
     text-decoration: none;
-    color: black;
-    
-	
+    color: white;
 }
 p{
+    text-justify: auto;
     margin-left: 60%;
     color: white;
     font-family: 'Kaushan Script', cursive;
@@ -63,15 +53,19 @@ p{
 }
 .borda{
     width: 80%;
-    height: 540px;
+    height: 600px;
     
     border: 3px solid black;
+    border-radius: 5%;
     
 
     padding-bottom: 8%;
-    margin-top: 10%;
+    margin-top: 5%;
     padding-right: 10%;
-    background-color:brown;
+    background-image: url(../imagens/joaninha52.jpg);;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
     
     
 	
@@ -79,10 +73,11 @@ p{
 }
 #imagens{
     width: 50%;
-    height: 450px;
-    margin-block-start: 5%;
+    height: 500px;
+    margin-block-start: 2%;
     margin-left: 2%;
     float: left;
+    border-radius: 5%;
 
     background-size: 100% 100%;
     animation: imagens 20s infinite;
@@ -98,10 +93,10 @@ p{
     
 }
 h1{
-    color: #ff8106;
+    color: LightSteelBlue;
     text-align: center;
-    margin-top:5%;
-    margin-left: 65%;
+    margin-top:6%;
+    margin-left: 68%;
 }
 @keyframes imagens{
     0%, 16%{
