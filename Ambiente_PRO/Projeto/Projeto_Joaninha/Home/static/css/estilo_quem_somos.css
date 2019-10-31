@@ -93,8 +93,9 @@ p{
     
 }
 h1{
-    color: LightSteelBlue;
+    color: rgba(167, 245, 245, 0.788);
     text-align: center;
+    font-family: 'Kaushan Script', cursive;
     margin-top:6%;
     margin-left: 68%;
 }
