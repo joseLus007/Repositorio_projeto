@@ -1,16 +1,13 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 body{
-    background-image: url();
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
     background-image: url(../imagens/preto.jpg);
 }
 
-menu{
+.menu{
     max-width: 100%;
-    margin: 0 auto;
-    padding:0 2%;
 	
 }
 header{

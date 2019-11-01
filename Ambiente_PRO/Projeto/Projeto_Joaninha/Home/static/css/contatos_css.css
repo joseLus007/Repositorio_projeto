@@ -7,7 +7,7 @@ body{
     background-image: url(../imagens/preto.jpg);
 }
 
-menu{
+.menu{
     max-width: 100%;
     margin: 0 auto;
     padding:0 2%;
