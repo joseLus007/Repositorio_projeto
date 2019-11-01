@@ -4,7 +4,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
-    background-image: url(../imagens/whatsfundo.jpg);
+    background-image: url(../imagens/preto.jpg);
 }
 
 menu{
@@ -35,10 +35,10 @@ header a{
 }
 
 #borda{
-    border: 5px solid red;
+    border: 5px solid rgba(0, 0, 0, 0.609) ;
     padding-bottom: 2%;
     margin-top: 100px;
-    background-image:url(../imagens/contato.jpg);
+    background-image:url(../imagens/cinza.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
@@ -46,8 +46,11 @@ header a{
     margin-left: 15%;
 }
 #borda1{
-    border: 5px solid blue;
+    border: 5px solid rgba(0, 0, 0, 0.609) ;
     margin-top: -5px;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-image:url(../imagens/cinza.jpg);
 }
 .mapa{
     margin-top:60px;
@@ -55,16 +58,20 @@ header a{
 h1{
     font-family: 'Pacifico', cursive;
     font-size:100px;
-    color: brown;
+    color:white;
 }
 h2{
+    font-family:'Times New Roman', Times, serif;
     font-size:50px;
-    color: burlywood;
+    color:white;
 }
 h3{
+    font-family: 'Courier New', Courier, monospace;
     margin-top: 45px;
     font-size: 25px;
+    color: white;
 }
-#texto{
-
+p{
+    color: white;
+    font-family: cursive;
 }

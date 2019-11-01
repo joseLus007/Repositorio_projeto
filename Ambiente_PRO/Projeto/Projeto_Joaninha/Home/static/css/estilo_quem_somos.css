@@ -1,9 +1,10 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 body{
+    background-image: url(../imagens/preto.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
-    background-image: url(../imagens/fundo-15.jpg);
+    
     
 	 
 }
