@@ -1,22 +1,13 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 body{
-    background-image: url(../imagens/preto.jpg);
+    background-image: url();
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
-    
-    
-	 
+    background-image: url(../imagens/preto.jpg);
 }
 
-#resultado{
-    color: white;
-    font-family: 'Volkhov', serif;
-    text-justify: auto;
-}
-
-
-.menu{
+menu{
     max-width: 100%;
     margin: 0 auto;
     padding:0 2%;
@@ -42,63 +33,65 @@ header a{
     text-decoration: none;
     color: white;
 }
-p{
-    text-justify: auto;
-    margin-left: 60%;
-    color: white;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 20px;
-    margin-top: 2%;
-    margin-right: -10%;
-	
-}
-.borda{
-    width: 80%;
-    height: 600px;
-    
-    border: 3px solid black;
-    border-radius: 5%;
-    
-
-    padding-bottom: 8%;
-    margin-top: 5%;
-    padding-right: 10%;
-    background-image: url(../imagens/joaninha52.jpg);;
+#borda{
+    border: 5px solid rgba(0, 0, 0, 0.609) ;
+    padding-bottom: 2%;
+    margin-top: 50px;
+    background-image:url(../imagens/cinza.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
+    margin-right: 15%;
+    margin-left: 15%;
     
-    
-	
-    
+}
+#borda1{
+    border: 5px solid rgba(0, 0, 0, 0.609) ;
+    margin-top: -5px;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-image:url(../imagens/cinza.jpg);
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size:100px;
+    animation: h1 1s infinite;
+}
+h2{
+    font-family:'Times New Roman', Times, serif;
+    font-size:50px;
+    color:white;
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 45px;
+    font-size: 25px;
+    color: white;
+}
+#texto{
+    color: white;
+    font-family: cursive;
+    border:0px;
+    width: 50%;
+    height: 200px;
+    margin-top: 2%;
 }
 #imagens{
     width: 50%;
     height: 500px;
     margin-block-start: 2%;
     margin-left: 2%;
-    float: left;
     border-radius: 5%;
 
     background-size: 100% 100%;
     animation: imagens 20s infinite;
-    border: black 2px solid;
-   
-	
+    border: black 2px solid;	
 }
-
-
-
-#imagens .borda{
-    float: left;
-    
-}
-h1{
-    color: rgba(167, 245, 245, 0.788);
-    text-align: center;
-    font-family: 'Kaushan Script', cursive;
-    margin-top:6%;
-    margin-left: 68%;
+@keyframes h1{
+    0%   {color: red;}
+    25%  {color: white;}
+    50%  {color: slateblue;}
+    100% {color: brown;}
 }
 @keyframes imagens{
     0%, 16%{

@@ -37,13 +37,13 @@ header a{
 #borda{
     border: 5px solid rgba(0, 0, 0, 0.609) ;
     padding-bottom: 2%;
-    margin-top: 100px;
+    margin-top: 50px;
     background-image:url(../imagens/cinza.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
     margin-right: 15%;
-    margin-left: 15%;
+    margin-left: 15%;   
 }
 #borda1{
     border: 5px solid rgba(0, 0, 0, 0.609) ;
@@ -58,7 +58,7 @@ header a{
 h1{
     font-family: 'Pacifico', cursive;
     font-size:100px;
-    color:white;
+    animation: h1 1s infinite;
 }
 h2{
     font-family:'Times New Roman', Times, serif;
@@ -74,4 +74,11 @@ h3{
 p{
     color: white;
     font-family: cursive;
+}
+
+@keyframes h1{
+    0%   {color: red;}
+    25%  {color: white;}
+    50%  {color: slateblue;}
+    100% {color: brown;}
 }
