@@ -45,10 +45,35 @@ header a{
 #borda1{
     border: 5px solid rgba(0, 0, 0, 0.609);
     margin-top: -5px;
-    margin-right: 15%;
     margin-left: 15%;
     background-image:url(../imagens/cinza.jpg);
+    width: 30%;
+    height: 10%;
+    
+    float: left;
 }
+#borda2 img{
+    border: 5px solid rgba(0, 0, 0, 0.609);
+    margin-top: -5px;
+    background-color:white;
+
+    width: 30%;
+    height: 10%;
+    float: left;
+}
+img{
+
+}
+#borda3{
+    border: 5px solid rgba(0, 0, 0, 0.609);
+    margin-top: -5px;
+    background-image:url(../imagens/cinza.jpg);
+    width: 30%;
+    height: 10%;
+    float: left;
+}
+
+
 h1{
     font-family: 'Pacifico', cursive;
     font-size:100px;
