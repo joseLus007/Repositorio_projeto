@@ -1,4 +1,4 @@
-*{margin: 0;padding: 0;box-sizing: border-box;}
+
 body{
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -44,7 +44,6 @@ li{
 #Telefone{
     width:260px;
 }
-
 #cardapio{
     border: #000000 3px solid;
     background-color:brown;
