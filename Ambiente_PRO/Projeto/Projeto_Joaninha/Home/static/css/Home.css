@@ -1,28 +1,13 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 body{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.876);
-    background: url(../imagens/fundo-2.jpg) no-repeat center top fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-#fundo{
-    width: 100%;
-    height: 100%;
-    
-    
-      
-   
-    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-image: url(../imagens/preto.jpg);
 }
 .menu{
-    max-width: 100%;   
-}
-#espaço{
-    padding-top:2%;
+    max-width: 100%;
+	
 }
 header{
     width: 100%;
@@ -44,35 +29,40 @@ header a{
     text-decoration: none;
     color: white;
 }
-
-.conteudo{
-    text-align: center;
-   
-
+#borda{
+    border: 5px solid rgba(0, 0, 0, 0.609);
+    padding-bottom: 2%;
     
-}
-
-.par{
-    /* padding-top:4px ; */
-    font-size: 40px;
-    text-align: center;
-    color:white;
-    /* color: #ff2b00; */
-    font-family: 'Kaushan Script', cursive;
-    /* background-image: url(../imagens/fundo-1.jpg);
+    margin-top: 50px;
+    background-image:url(../imagens/cinza.jpg);
     background-repeat: no-repeat;
-    background-size:cover; */
+    background-attachment: fixed;
+    background-size:cover;
+    margin-right: 15%;
+    margin-left: 15%;
     
 }
-p{
-    text-shadow: 2px 5px #000000;
+#borda1{
+    border: 5px solid rgba(0, 0, 0, 0.609);
+    margin-top: -5px;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-image:url(../imagens/cinza.jpg);
 }
-#final{
-    position: fixed;
-    bottom:3%;
-    left:0;
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size:100px;
+    animation: h1 1s infinite;
+}
+h2{
+    font-family:'Times New Roman', Times, serif;
+    font-size:50px;
+    color:white;
 }
 
-
-
-
+@keyframes h1{
+    0%   {color: red;}
+    25%  {color: white;}
+    50%  {color: slateblue;}
+    100% {color: brown;}
+}

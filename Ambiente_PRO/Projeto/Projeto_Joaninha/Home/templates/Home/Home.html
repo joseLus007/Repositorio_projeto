@@ -5,7 +5,7 @@
         <meta charset="UTF-8"> 
         <title>Joaninha</title>
         <link rel="icon" href="{% static 'imagens/bob.png' %}">
-        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">    
         <link rel="stylesheet" href="{% static 'css/Home.css' %}">
         <!-- <link rel="stylesheet" type="text/css" href="Home.css" /> -->
         
@@ -13,7 +13,6 @@
     <body>
         {% block conteudo %}
         <!-- https://medium.com/horadecodar/criando-templates-no-django-e-adicionando-css-f200310cca56 -->
-        <div id='fundo'>
         <header>
             <div class="menu"> 
                 <nav>
@@ -26,16 +25,8 @@
                 </nav>
             </div>
         </header>
-                <section class="content">
-                    <div class="par">
-                        <p id="espaço">RESTAURANTE  JOANINHA</p>
-                        <!-- <marquee behavior="" direction="right"><img src="{% static 'imagens/20-imagem.gif' %}" alt=""></marquee> -->
-                        <marquee behavior="" direction="" id="final"><p>sabor incomparável para satisfazer seu paladar</p></marquee>
-                    </div>
-                </section>
-            </div>
-        </div>    
-         
+        <div id="borda"><center><h1>Bom para comer</h1></center></div>
+        <div id= "borda1"><center><h2>Desde 2010</h2></center></div>
         {% endblock %}
     </body>
 </html>
