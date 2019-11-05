@@ -30,46 +30,46 @@ header a{
     color: white;
 }
 #borda{
-    border: 5px solid rgba(0, 0, 0, 0.609);
+    border: 10px outset;
     padding-bottom: 2%;
     
     margin-top: 50px;
-    background-image:url(../imagens/cinza.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
+    background: rgba(119, 80, 80, 0.39);
     margin-right: 15%;
     margin-left: 15%;
     
+    
 }
 #borda1{
-    border: 5px solid rgba(0, 0, 0, 0.609);
+    border: 5px solid rgba(119, 80, 80, 0.39);;
+    border: 10px outset;
     margin-top: -5px;
     margin-left: 15%;
-    background-image:url(../imagens/cinza.jpg);
-    width: 30%;
-    height: 10%;
+    background-color: rgba(119, 80, 80, 0.39);
+    width: 20%;
+    height: 140px;
     
     float: left;
 }
 #borda2 img{
-    border: 5px solid rgba(0, 0, 0, 0.609);
+    border: 5px solid rgba(119, 80, 80, 0.39);;
+    border: 10px outset;
     margin-top: -5px;
-    background-color:white;
+    background-color:rgba(119, 80, 80, 0.39);;
 
-    width: 30%;
-    height: 10%;
+    width: 20%;
+    height: 140px;
     float: left;
 }
 img{
-
 }
 #borda3{
-    border: 5px solid rgba(0, 0, 0, 0.609);
+    border: 5px solid rgba(119, 80, 80, 0.39);;
     margin-top: -5px;
-    background-image:url(../imagens/cinza.jpg);
+    background-color:rgba(119, 80, 80, 0.39);;
+    border: 10px outset;
     width: 30%;
-    height: 10%;
+    height: 140px;
     float: left;
 }
 
@@ -84,7 +84,6 @@ h2{
     font-size:50px;
     color:white;
 }
-
 @keyframes h1{
     0%   {color: red;}
     25%  {color: white;}
