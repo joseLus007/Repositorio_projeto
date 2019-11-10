@@ -51,6 +51,9 @@ header a{
     margin-right: 15%;
     margin-left: 15%;
     background-image:url(../imagens/cinza.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
 }
 .mapa{
     margin-top:60px;
