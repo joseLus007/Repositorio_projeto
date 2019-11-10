@@ -61,16 +61,7 @@ h2{
     font-size:50px;
     color:white;
 }
-h1{
-    font-family: 'Pacifico', cursive;
-    font-size:100px;
-    animation: h1 1s infinite;
-}
-h2{
-    font-family:'Times New Roman', Times, serif;
-    font-size:50px;
-    color:white;
-}
+
 @keyframes h1{
     0%   {color: red;}
     25%  {color: white;}
