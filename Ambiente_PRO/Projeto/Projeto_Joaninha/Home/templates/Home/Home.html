@@ -7,12 +7,10 @@
         <link rel="icon" href="{% static 'imagens/bob.png' %}">
         <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">    
         <link rel="stylesheet" href="{% static 'css/Home.css' %}">
-        <!-- <link rel="stylesheet" type="text/css" href="Home.css" /> -->
         
     </head>
     <body>
         {% block conteudo %}
-        <!-- https://medium.com/horadecodar/criando-templates-no-django-e-adicionando-css-f200310cca56 -->
         <header>
             <div class="menu"> 
                 <nav>
@@ -28,7 +26,7 @@
         
         <div id = "borda"><center><h1>Restaurante Joaninha</h1></center></div>
         <div id= "borda1"><h2>Seja Bem Vindo</h2></div>
-        <marquee direction="right"><img src="{% static 'imagens/20-imagem.gif' %}" alt=""></marquee>
+        <marquee id="joaninha" direction="right"><img src="{% static 'imagens/20-imagem.gif' %}" alt=""></marquee>
         {% endblock %}
     </body>
 </html>

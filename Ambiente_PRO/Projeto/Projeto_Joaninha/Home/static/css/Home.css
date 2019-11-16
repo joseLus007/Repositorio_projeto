@@ -3,7 +3,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
-    background-image: url(../imagens/preto.jpg);
+    background-image: url(../imagens/Preto-02.jpg);
 }
 .menu{
     max-width: 100%;
@@ -30,26 +30,23 @@ header a{
     color: white;
 }
 #borda{
-    border: 5px solid rgba(0, 0, 0, 0.609) ;
-    padding-bottom: 2%;
+    background-image:url(../imagens/Preto-06.jpg);
     margin-top: 50px;
-    background-image:url(../imagens/cinza.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
-    margin-right: 15%;
-    margin-left: 15%;   
+    margin-right: 10%;
+    margin-left: 10%;   
 }
 #borda1{
+    background-image:url(../imagens/Preto-05.jpg);
     text-align: center;
-    border: 5px solid rgba(0, 0, 0, 0.609);
-    margin-top: -5px;
-    margin-right: 15%;
-    margin-left: 15%;
-    background-image:url(../imagens/cinza.jpg);
+    margin-right: 10%;
+    margin-left: 10%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
+  
 }
 h1{
     font-family: 'Pacifico', cursive;
@@ -62,12 +59,26 @@ h2{
     color:white;
 }
 img{
+    
     height: 200px;
 
 }
-@keyframes h1{
+#joaninha{
+    padding-top: 5%;
+
+}
+@keyframes h1 {
     0%   {color: red;}
     25%  {color: white;}
     50%  {color: slateblue;}
     100% {color: brown;}
 }
+@keyframes h2{
+    0%   {color: red;}
+    25%  {color: white;}
+    50%  {color: slateblue;}
+    100% {color: brown;}
+}
+
+
+

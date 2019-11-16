@@ -3,76 +3,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
-    background-image: url(../imagens/preto.jpg);
-}
-h1{
-    color:white;
-    text-align: center;
-    margin-left: 5%;
-}
-h2{
-    color:white;
-    text-align: left;
-    margin-left: 5%;
-}
-
-
-#prato option{
-    width: 240px;
-}
-
-#Acompanhamentos option{
-    width: 240px;
-}
-
-#Saladas option{
-    width: 240px;
-}
-
-#FormaPagamento option{
-    width: 240px;
-}
-
-#nomeid{
-    width: 260px;
-}
-
-#Endereco{
-    width:260px;
-}
-
-#Telefone{
-    width:260px;
-}
-#cardapio{
-    border: #000000 3px solid;
-    max-width: 45%;
-    margin-top: 5%;
-    display: block;
-    margin-left: 27%;
-    border-radius: 7%;
-    margin-bottom: 2%;
-    background-image: url(../imagens/fundo-15.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
-}
-li{
-    color:white;
-    margin-left: 5%;
-}
-#opcoes{
-    border: #000000 3px solid;
-    max-width: 300%;
-    margin-left:27%;
-    margin-right: 27.5%;
-    padding:2%;
-    display: block;
-    border-radius: 7%;
-    background-image: url(../imagens/fundo-15.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
+    background-image: url(../imagens/Preto-02.jpg);
 }
 .menu{
     max-width: 100%;
@@ -96,4 +27,26 @@ header a{
     font-size: 16px;
     text-decoration: none;
     color: white;
+}
+.colunas{
+    text-align:justify;
+}
+.colunas::after{
+    content: " e";
+    background-color: blueviolet;
+    display: inline-block;
+    widows:100%;
+}
+.unido{
+    display: inline-block;
+    width: 45%;
+    height: 150px;
+}
+.cardapio{
+    
+    border: solid black;
+}
+.formulario{
+    
+    border: black solid;
 }

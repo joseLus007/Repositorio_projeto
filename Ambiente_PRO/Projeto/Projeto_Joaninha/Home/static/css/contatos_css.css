@@ -4,7 +4,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
-    background-image: url(../imagens/preto.jpg);
+    background-image: url(../imagens/Preto-02.jpg);
 }
 
 .menu{
@@ -35,10 +35,9 @@ header a{
 }
 
 #borda{
-    border: 5px solid rgba(0, 0, 0, 0.609) ;
     padding-bottom: 2%;
     margin-top: 50px;
-    background-image:url(../imagens/cinza.jpg);
+    background-image:url(../imagens/Preto-06.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
@@ -46,11 +45,10 @@ header a{
     margin-left: 15%;   
 }
 #borda1{
-    border: 5px solid rgba(0, 0, 0, 0.609) ;
     margin-top: -5px;
     margin-right: 15%;
     margin-left: 15%;
-    background-image:url(../imagens/cinza.jpg);
+    background-image:url(../imagens/Preto-05.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
@@ -71,7 +69,7 @@ h2{
 h3{
     font-family: 'Courier New', Courier, monospace;
     margin-top: 45px;
-    font-size: 25px;
+    /* font-size: 30px; */
     color: white;
 }
 p{
