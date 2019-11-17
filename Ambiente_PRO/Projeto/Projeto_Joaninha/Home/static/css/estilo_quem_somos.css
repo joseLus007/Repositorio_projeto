@@ -23,7 +23,7 @@ header li{
     margin: 20px 70px;
 }
 li :hover{
-    color:blanchedalmond;
+    color:#808080;
 }
 header a{
     font-size: 16px;

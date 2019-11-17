@@ -1,6 +1,5 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 body{
-    background-image: url();
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
@@ -9,8 +8,8 @@ body{
 
 .menu{
     max-width: 100%;
-    margin: 0 auto;
-    padding:0 2%;
+    
+    
 	
 }
 header{
@@ -26,7 +25,7 @@ header li{
     margin: 20px 70px;
 }
 li :hover{
-    color:blanchedalmond;
+    color:#808080;
 }
 header a{
     font-size: 16px;

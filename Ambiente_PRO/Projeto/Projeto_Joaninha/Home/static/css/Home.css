@@ -22,7 +22,7 @@ header li{
     margin: 20px 70px;
 }
 li :hover{
-    color:blanchedalmond;
+    color:#808080 ;
 }
 header a{
     font-size: 16px;
@@ -68,12 +68,6 @@ img{
 
 }
 @keyframes h1 {
-    0%   {color: red;}
-    25%  {color: white;}
-    50%  {color: slateblue;}
-    100% {color: brown;}
-}
-@keyframes h2{
     0%   {color: red;}
     25%  {color: white;}
     50%  {color: slateblue;}

@@ -17,36 +17,99 @@ header{
     
 }
 header li{
+    
     display: inline-block;
     margin: 20px 70px;
 }
 li :hover{
-    color:blanchedalmond;
+    color:#808080;
 }
 header a{
     font-size: 16px;
     text-decoration: none;
     color: white;
 }
-.colunas{
-    text-align:justify;
+#borda{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    background-image:url(../imagens/Preto-06.jpg);
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    margin-right: 15%;
+    margin-left: 15%;   
 }
-.colunas::after{
-    content: " e";
-    background-color: blueviolet;
-    display: inline-block;
-    widows:100%;
+#borda p{
+    font-size: 100px;
+}
+#borda1{
+    background-image:url(../imagens/Preto-05.jpg);
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+  
+}
+#borda1 p{
+    font-family:'Times New Roman', Times, serif;
+    font-size:50px;
+    color:white;
+}
+
+
+
+
+.colunas{
+    text-align:center;
+    padding-top:4% ;
+    
+    
+    
 }
 .unido{
     display: inline-block;
     width: 45%;
-    height: 150px;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.623);
+    
+    
 }
 .cardapio{
+    color: #a9a9a9;
+    text-align: left;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    margin-right: 5%;;
+    margin-bottom: 3%;
+    font-size: 25px;
+   
     
-    border: solid black;
 }
 .formulario{
     
     border: black solid;
+   
+   
+}
+
+
+p{
+    color: #cfcfcf;
+    padding: 5px;
+    font-size: 35px;
+    font-weight: bold;
+
+}
+
+@keyframes cores{
+    0%   {color: red;}
+    25%  {color: white;}
+    50%  {color: slateblue;}
+    100% {color: brown;}
+}
+#cores{
+    animation: cores 1s infinite;
 }
