@@ -10,8 +10,6 @@ def QuemSomos(request):
 def Localizacao(request):
     return render(request, 'Home/Contatos.html')
 
-def CardapioEntrega(request):
-    return render(request, 'Home/CardapioEntrega.html')
 
 def Agradecimentos(request):
     return render(request, 'Home/Agradecimentos.html')

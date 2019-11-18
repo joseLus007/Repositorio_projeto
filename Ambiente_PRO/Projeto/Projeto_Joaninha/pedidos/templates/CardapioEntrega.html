@@ -17,7 +17,7 @@
                     <nav>
                         <ul>
                             <li><a href="{% url 'home:Home' %}">HOME</a></li>
-                            <li><a href="{% url 'home:CardapioEntrega' %}">CARDAPIO</a></li>
+                            <li><a href="{% url 'pedidos:pedidos_add' %}">CARDAPIO</a></li>
                             <li><a href="{% url 'home:QuemSomos' %}">QUEM SOMOS</a></li>
                             <li><a href="{% url 'home:Localizacao' %}">LOCALIZAÇÃO</a></li>
                         </ul>
@@ -140,19 +140,15 @@
                 </table>
             </div>
             <div class="unido formulario">
-                    <ul>Pratos:
-                            <li>Virado a Paulista -  R$ 16</li>
-                            <li>Bife -  R$ 14</li>
-                            <li>Filé de frango - R$14 </li>
-                            <li>Frango ao molho - R$13</li>
-                            <li>Carne de panela - R$14</li>
-                            <li>Fígado acebolado - R$14</li>
-                            <li>Bife acebolado - R$15</li>
-                            <li>Feijoada - R$16</li>
-                            <li>Calabresa - R$14</li>
-                        </ul>
-        
-
+                <form method="POST">{% csrf_token %}
+                    <h2>Faça seu Pedido aqui</h2>
+                    <p>Nome completo: {{form.nome_cliente }}</p>
+                    <p>E-mail:{{form.email }}</p>
+                    <p>Pedido:{{form.lista_pedidos }}</p>
+                    <p>Endereço:{{form.endereco }}</p>
+                    <p>Numero de Contato:{{form.numero_contato }}</p>
+                    <button>Concluir</button>
+                </form>
             </div>
             
         </div>
