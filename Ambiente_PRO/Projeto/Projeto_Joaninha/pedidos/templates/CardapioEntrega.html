@@ -141,13 +141,17 @@
             </div>
             <div class="unido formulario">
                 <form method="POST">{% csrf_token %}
-                    <h2>Faça seu Pedido aqui</h2>
-                    <p>Nome completo: {{form.nome_cliente }}</p>
-                    <p>E-mail:{{form.email }}</p>
-                    <p>Pedido:{{form.lista_pedidos }}</p>
-                    <p>Endereço:{{form.endereco }}</p>
-                    <p>Numero de Contato:{{form.numero_contato }}</p>
-                    <button>Concluir</button>
+                    <h1 id=titulo>Faça seu pedido Aqui:</h1>
+                    <p id=nomeid>Nome:<br>{{form.nome_cliente }}</p>
+                    <p>Email:<br>{{form.email }}</p>
+                    <p>Prato:<br>{{form.prato }}</p>
+                    <p>Acomapnhamentos:<br>{{form.acompanhamentos}}</p>
+                    <p>Saladas:<br>{{form.saladas}}</p>
+                    <p>Forma de Pagemento:<br>{{form.forma_de_pagamento}}</p>
+                    <p>Endereço:<br>{{form.endereco }}</p>
+                    <p>Contato:<br>{{form.numero_contato }}</p>
+                    <br><br>          
+                    <button onClick="Enviar()">Concluir</button>
                 </form>
             </div>
             

@@ -8,26 +8,32 @@
             <tr>
                 <th>Nome do Cliente</th>
                 <th>E-mail</th>
-                <th>Pedido</th>
+                <th>Prato</th>
+                <th>Acompanhamento</th>
+                <th>Saladas</th>
                 <th>Forma de Pagamento</th>
                 <th >Endereço</th>
                 <th >Numero de contato</th>
+                <th >Horário</th>
             </tr>
         </thead>
         <tbody>
             {% for object in object_list %}
-                <tr>
-                    <td>{{object.nome_cliente}}</td>
-                    <td>{{object.email}}</td>
-                    <td>
-                        <a href="{{ object.get_absolute_url }}">{{ object.lista_pedidos }}</a>
-                    </td>
-                    <td>{{object.forma_de_pagamento}}</td>
-                    <td>{{object.endereco}}</td>
-                    <td>{{object.numero_contato}}</td>
-                </tr>
-            {% endfor%}
-        </tbody>
+            <tr>
+                <td>{{object.nome_cliente}}</td>
+                <td>{{object.email}}</td>
+                <td>
+                    <a href="{{ object.get_absolute_url }}">{{ object.prato }}</a>
+                </td>
+                <td>{{object.acompanhamentos}}</td>
+                <td>{{object.saladas}}</td>
+                <td>{{object.forma_de_pagamento}}</td>
+                <td>{{object.endereco}}</td>
+                <td>{{object.numero_contato}}</td>
+                <td>{{object.horario}}</td>
+            </tr>
+        {% endfor%}
+    </tbody>
     </table>
 
    

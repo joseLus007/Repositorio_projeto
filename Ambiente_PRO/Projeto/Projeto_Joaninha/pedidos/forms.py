@@ -2,19 +2,32 @@ from django import forms
 from .models import Pedidos
 
 class PedidosForm(forms.ModelForm):
-    nome_cliente=forms.CharField(label='', 
-                    widget=forms.TextInput(attrs={"placeholder": "Your title"}))
+    dinheiro='Dinheiro'
+    cartao= 'Cartão'
+    escolhasPag=[('','Selecione'),(dinheiro, 'Dinheiro'), (cartao,'Debito'),(cartao,'Credito')]
+    pratos=[('','Selecione'),('Virado a Paulista', 'Virado a Paulista'),('Bife','Bife'),('Filé de frango','Filé de frango'),('Frango ao molho','Frango ao molho'),('Carne de panela','Carne de panela'),('Figado acebolado','Figado acebolado'),('Bife acebolado','Bife acebolado'),('Feijoada','Feijoada'),('Calabresa','Calabresa')]
+    acompanhamentos=[('','Selecione'),("Banana frita, linguiça, ovo, couve (virado)","Banana frita, linguiça, ovo, couve (virado)"),('Legumes refogados','Legumes refogados'),('Escarola','Escarola'),('Fritas', 'Fritas')]
+    saladas=[('','Selecione'),('Alface e pepino','Alface e pepino'),('Repolho e cenoura','Repolho e cenoura')]
 
-    email=forms.CharField(label='', 
-                    widget=forms.TextInput(attrs={"placeholder": "Email"}))
-    lista_pedidos=forms.CharField(label='', 
-                    widget=forms.TextInput(attrs={"placeholder": "Pedido"}))
+    nome_cliente=forms.CharField(label='', 
+                    widget=forms.TextInput(attrs={"placeholder": "Nome Completo"}))
+
+    email= forms.EmailField(label='', 
+                    widget=forms.TextInput(attrs={"placeholder": "ex@mail.com"}))
+    
+    prato=forms.ChoiceField(choices=pratos, required=True)
+
+    acompanhamentos=forms.ChoiceField(choices=acompanhamentos, required=True)
+
+    saladas=forms.ChoiceField(choices=saladas, required=True)
+                    
+    forma_de_pagamento=forms.ChoiceField(choices=escolhasPag, required=True)
 
     endereco=forms.CharField(label='', 
-                    widget=forms.TextInput(attrs={"placeholder": "endereco"}))
+                    widget=forms.TextInput(attrs={"placeholder": "rua X"}))
 
     numero_contato=forms.CharField(label='', 
-                    widget=forms.TextInput(attrs={"placeholder": "Contato"}))
+                    widget=forms.TextInput(attrs={"placeholder": "1234-5678"}))
     class Meta:
         model=Pedidos
-        fields=["nome_cliente","email","lista_pedidos","endereco","numero_contato"]
+        fields=["nome_cliente","email","prato","acompanhamentos","saladas","forma_de_pagamento","endereco","numero_contato"]

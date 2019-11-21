@@ -9,7 +9,9 @@ def main ():
     t=Pedidos()
     t.nome_cliente='jose luis'
     t.email='jose@hotmail.com'
-    t.lista_pedidos='Arroz,fejao,bife'
+    t.prato='bife'
+    t.acompanhamentos='batata'
+    t.saladas='Sem Salada'
     t.forma_de_pagamento='Cartão'
     t.endereco='rua nao sei'
     t.numero_contato='9121222'
