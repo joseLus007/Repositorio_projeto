@@ -64,7 +64,7 @@ img{
 
 }
 #joaninha{
-    padding-top: 5%;
+    padding-top: 2%;
 
 }
 @keyframes h1 {
@@ -73,6 +73,13 @@ img{
     50%  {color: slateblue;}
     100% {color: brown;}
 }
+.pratos{
+    display:inline-block; 
+}
 
-
-
+#tudo{
+    text-align: center;
+}
+#imagem{
+    margin-top: 35px;
+}
