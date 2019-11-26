@@ -30,4 +30,8 @@ class PedidosForm(forms.ModelForm):
                     widget=forms.TextInput(attrs={"placeholder": "1234-5678"}))
     class Meta:
         model=Pedidos
-        fields=["nome_cliente","email","prato","acompanhamentos","saladas","forma_de_pagamento","endereco","numero_contato"]
+        fields="__all__"
+
+
+
+

@@ -16,6 +16,17 @@ def pedidos_detail(request,pk):
     obj=Pedidos.objects.get(pk=pk)
     context={'object':obj}
     return render(request,template_name,context)
+def pedido_add(request):
+    template_name="pedidosform.html"
+    return render(request,template_name)
+
+class PedidoCreate(CreateView):
+    model=Pedidos
+    template_name="pedidosform.html"
+    form_class=PedidosForm
+
+
+
 def pedido_create_view(request):
     form = PedidosForm(request.POST or None)
     if form.is_valid():
@@ -25,3 +36,4 @@ def pedido_create_view(request):
         'form': form
     }
     return render(request, "CardapioEntrega.html", context)
+

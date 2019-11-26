@@ -18,7 +18,6 @@ class Pedidos(models.Model):
     forma_de_pagamento=models.CharField(max_length=20,choices=formaPagamento, default='Selecione',)
     endereco=models.CharField('endereço',max_length=2000)
     numero_contato=models.CharField('contato',max_length=12)
-    #horario=models.CharField('horario', max_length=20)
     
     class Meta:
         ordering=("prato",)
