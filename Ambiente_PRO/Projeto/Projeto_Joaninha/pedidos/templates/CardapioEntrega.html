@@ -1,4 +1,5 @@
 {% load static %}
+{% load widget_tweaks %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -127,21 +128,26 @@
                 </table>
             </div>
             <div class="unido formulario">
+                {% block content %}
+                <p>Pedido</p>
                 <form method="POST">{% csrf_token %}
-                    <h1 id=titulo>Faça seu pedido Aqui:</h1>
+                    <div class="form-control">
+                    
+                    {{form.as_p }}
+                    </div>   
+                    <button type="submit" class="btn btn-success" style="border:2px solid red;">Concluir</button>                
+                </form>
+                {%endblock content%}
+            </div>
+        </div>
+    </body>
+</html>
+ <!-- <h1 id=titulo>Faça seu pedido Aqui:</h1>
                     <p id=nomeid>Nome:<br>{{form.nome_cliente }}</p>
                     <p>Email:<br>{{form.email }}</p>
                     <p>Prato:<br>{{form.prato }}</p>
                     <p>Acomapnhamentos:<br>{{form.acompanhamentos}}</p>
                     <p>Saladas:<br>{{form.saladas}}</p>
                     <p>Forma de Pagemento:<br>{{form.forma_de_pagamento}}</p>
-                    <p>Endereço:<br>{{form.endereco }}</p>
-                    <p>Contato:<br>{{form.numero_contato }}</p>
-                    <br><br>          
-                    <button onClick="Enviar()">Concluir</button>
-                </form>
-            </div>
-            
-        </div>
-    </body>
-</html>
+                    <p style="border: solid red 3px;">Endereço:<br>{{form.endereco }}</p>
+                    <p class='form-control'>Contato:<br>{{form.numero_contato }}</p>-->

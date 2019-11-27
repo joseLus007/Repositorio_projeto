@@ -8,6 +8,9 @@ from django.urls import reverse_lazy
 def pedidos_list(request):
     template_name='pedidos_list.html'
     objects=Pedidos.objects.all()
+    search=request.GET.get("search")
+    if search:
+        objects=objects.filter(prato__icontains=search)
     context={'object_list':objects}
     return render (request,template_name,context)
 

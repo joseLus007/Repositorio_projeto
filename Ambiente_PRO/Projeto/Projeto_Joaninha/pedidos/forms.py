@@ -9,10 +9,10 @@ class PedidosForm(forms.ModelForm):
     acompanhamentos=[('','Selecione'),("Banana frita, linguiça, ovo, couve (virado)","Banana frita, linguiça, ovo, couve (virado)"),('Legumes refogados','Legumes refogados'),('Escarola','Escarola'),('Fritas', 'Fritas')]
     saladas=[('','Selecione'),('Alface e pepino','Alface e pepino'),('Repolho e cenoura','Repolho e cenoura')]
 
-    nome_cliente=forms.CharField(label='', 
+    nome_cliente=forms.CharField(label='Nome', 
                     widget=forms.TextInput(attrs={"placeholder": "Nome Completo"}))
 
-    email= forms.EmailField(label='', 
+    email= forms.EmailField(label='Email', 
                     widget=forms.TextInput(attrs={"placeholder": "ex@mail.com"}))
     
     prato=forms.ChoiceField(choices=pratos, required=True)
@@ -23,10 +23,10 @@ class PedidosForm(forms.ModelForm):
                     
     forma_de_pagamento=forms.ChoiceField(choices=escolhasPag, required=True)
 
-    endereco=forms.CharField(label='', 
+    endereco=forms.CharField(label='Endereço', 
                     widget=forms.TextInput(attrs={"placeholder": "rua X"}))
 
-    numero_contato=forms.CharField(label='', 
+    numero_contato=forms.CharField(label='contato', 
                     widget=forms.TextInput(attrs={"placeholder": "1234-5678"}))
     class Meta:
         model=Pedidos
