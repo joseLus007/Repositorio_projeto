@@ -38,9 +38,20 @@
             <td>R$ <span class="pull-right">{{ object.preco }}</span></td>
             <td class="text-center">{{ object.estoque }}</td>
             <td class="text-center">{{ object.estoque_minimo }}</td>
+              
+            <td><span class="pull-right">
+              <a href="{{object.pk}}/delete/">
+                <button type="button" class="btn btn-danger">
+                  <span class=""></span>Excluir
+                </button>
+              </a>
+            </span>
+            
+            </td>
           </tr>
         {% endfor %}
       </tbody>
+      
     </table>
 
 </div>
