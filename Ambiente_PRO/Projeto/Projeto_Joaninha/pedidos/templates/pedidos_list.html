@@ -47,6 +47,15 @@
                 <td>{{object.endereco}}</td>
                 <td>{{object.numero_contato}}</td>
                 <td>{{object.horario}}</td>
+                <td><span class="pull-right">
+                    <a href="{{object.pk}}/delete/">
+                      <button type="button" class="btn btn-danger">
+                        <span class=""></span>Excluir
+                      </button>
+                    </a>
+                  </span>
+                  
+                </td>
             </tr>
         {% endfor%}
     </tbody>

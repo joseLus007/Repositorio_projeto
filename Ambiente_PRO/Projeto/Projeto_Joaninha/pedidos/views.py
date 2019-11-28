@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,get_object_or_404
 from django.views.generic import CreateView
 from .models import Pedidos
 from .forms import PedidosForm
@@ -40,3 +40,9 @@ def pedido_create_view(request):
     }
     return render(request, "CardapioEntrega.html", context)
 
+def deleteDado(request,pk):
+    template_name='pedidos_list.html'
+    obj=get_object_or_404(Pedidos,pk=pk)
+    obj.delete()
+    return render(request,template_name)
+    

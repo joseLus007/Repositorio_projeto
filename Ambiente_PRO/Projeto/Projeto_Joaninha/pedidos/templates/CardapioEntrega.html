@@ -1,5 +1,7 @@
 {% load static %}
+
 {% load widget_tweaks %}
+{% block content %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -128,26 +130,23 @@
                 </table>
             </div>
             <div class="unido formulario">
-                {% block content %}
-                <p>Pedido</p>
-                <form method="POST">{% csrf_token %}
+                
+                <center><p>Pedido</p></center>
+                <form method="POST" novalidate>
+                    {% csrf_token %}
                     <div class="form-control">
-                    
-                    {{form.as_p }}
+                        <span class="required">{{form.as_p }}</span>
                     </div>   
-                    <button type="submit" class="btn btn-success" style="border:2px solid red;">Concluir</button>                
+                    <button type="button" class="fa fa-plus ">Concluir</button> 
+                        
                 </form>
-                {%endblock content%}
+                
             </div>
         </div>
     </body>
 </html>
- <!-- <h1 id=titulo>Faça seu pedido Aqui:</h1>
-                    <p id=nomeid>Nome:<br>{{form.nome_cliente }}</p>
-                    <p>Email:<br>{{form.email }}</p>
-                    <p>Prato:<br>{{form.prato }}</p>
-                    <p>Acomapnhamentos:<br>{{form.acompanhamentos}}</p>
-                    <p>Saladas:<br>{{form.saladas}}</p>
-                    <p>Forma de Pagemento:<br>{{form.forma_de_pagamento}}</p>
-                    <p style="border: solid red 3px;">Endereço:<br>{{form.endereco }}</p>
-                    <p class='form-control'>Contato:<br>{{form.numero_contato }}</p>-->
+{%endblock content%}
+<!-- <div class="form-control">
+        <span class="required">{{form.as_p }}</span>
+    </div>   
+    <button type="button" class="fa fa-plus ">Concluir</button>  -->
