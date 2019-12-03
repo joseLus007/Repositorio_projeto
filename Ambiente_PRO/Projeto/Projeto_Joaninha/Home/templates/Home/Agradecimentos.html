@@ -6,21 +6,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Agradecimentos!</title>
         <link rel="icon" type="imagem/png" href="{% static 'imagens/bob.png' %}"/>
-        <link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css' %}" media="screen" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/Agradecimentos.css' %}" media="screen" />
     </head>
     <body>
-        <div id="Centro">
-            <h3>Agradecemos a sua compra!</h3>
-            <h5>Volte Sempre!</h5>
-            <tr><a href="{% url 'home:Home' %}">Home</a></tr>
-            <br>
-            <tr><a href="{% url 'pedidos:pedidos_add' %}">Realizar outro pedido</a></tr>
-
-            <div id="borda"><center><h1>Agrademos a sua compra!</h1></center></div>
-            <div id= "borda1"><center><h2>Volte Sempre</h2>
-                <a href="{% url 'home:Home' %}">Home</a>
-                <a href="{% url 'pedidos:pedido_create_view' %}">Realizar outro pedido</center></a>
-        </div>
-        </div>
+        <div id =  "borda"><center><h1>Agrademos a sua compra!</h1></center></div>
+        <div id =  "borda1"><center><h2>Volte Sempre!</h2>
+        <div id =  "borda2"><a href="{% url 'home:Home' %}"><h2>Home</h2></a></div> 
+        <div id =  "borda3"><a href="{% url 'pedidos:pedido_create_view' %}"><h2>Realizar outro pedido</h2></a></center></div> 
     </body>
 </html>

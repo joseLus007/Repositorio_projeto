@@ -35,26 +35,31 @@ h2{
     background-attachment: fixed;
     background-size:cover;
 }
-a{
-    text-decoration: none;
-    color:black;
-}
-.borda2{
-    display: inline-block;
-    list-style-type: none;
+#borda2{
     margin-top: -5px;
     margin-right: 15%;
     margin-left: 15%;
+    background-image:url(../imagens/Preto-05.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
 }
-.borda2-parte1{
-    background-color: blue;
+#borda3{
+    margin-top: -5px;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-image:url(../imagens/Preto-05.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+a{
+    text-decoration: none;
+    color:black;
 }
 
-a:hover {
-    color:blanchedalmond; 
+a:hover h2{
+    color:black; 
 }
 @keyframes h1{
     0%   {color: red;}
