@@ -36,7 +36,8 @@ header a{
     background-attachment: fixed;
     background-size:cover;
     margin-right: 10%;
-    margin-left: 10%;   
+    margin-left: 10%;
+    height: 250px;   
 }
 #borda1{
     background-image:url(../imagens/Preto-05.jpg);

@@ -7,11 +7,11 @@ class Pedidos(models.Model):
     Cartao = 'Cartão'
     formaPagamento=[('','Selecione'),(dinheiro, 'Dinheiro'),(Cartao, 'Debito'),(Cartao, 'Credito')]
     pratos=[('','Selecione'),('Virado a Paulista', 'Virado a Paulista'),('Bife','Bife'),('Filé de frango','Filé de frango'),('Frango ao molho','Frango ao molho'),('Carne de panela','Carne de panela'),('Figado acebolado','Figado acebolado'),('Bife acebolado','Bife acebolado'),('Feijoada','Feijoada'),('Calabresa','Calabresa')]
-    acompanhamentos=[('','Selecione'),('Banana frita, linguiça, ovo, couve (virado)','Banana frita, linguiça, ovo, couve (virado)'),('Legumes refogados','Legumes refogados'),('Escarola','Escarola'),('Fritas', 'Fritas')]
+    acompanhamentos=[('','Selecione'),('Banana Frita','Banana Frita'),('Linguça','Linguiça'),('Ovo','Ovo'),('Couve(virado)','Couve(virado)'),('Legumes refogados','Legumes refogados'),('Escarola','Escarola'),('Fritas', 'Fritas')]
     saladas=[('','Selecione'),('Alface e pepino','Alface e pepino'),('Repolho e cenoura','Repolho e cenoura')]
     
     nome_cliente=models.CharField('nome_cliente',max_length=100)
-    email=models.CharField('E-mail',max_length=200,unique=True)
+    email=models.CharField('E-mail',max_length=200,unique=False)
     prato=models.CharField(max_length=20,choices=pratos, default='Selecione',)
     acompanhamentos=models.CharField(max_length=100,choices=acompanhamentos, default='Selecione',)
     saladas=models.CharField(max_length=50,choices=saladas, default='Selecione',)

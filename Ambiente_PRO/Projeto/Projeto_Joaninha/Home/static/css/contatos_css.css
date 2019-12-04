@@ -41,7 +41,8 @@ header a{
     background-attachment: fixed;
     background-size:cover;
     margin-right: 15%;
-    margin-left: 15%;   
+    margin-left: 15%; 
+    height: 170px;  
 }
 #borda1{
     margin-top: -5px;
@@ -51,6 +52,7 @@ header a{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
+    
 }
 .mapa{
     margin-top:60px;

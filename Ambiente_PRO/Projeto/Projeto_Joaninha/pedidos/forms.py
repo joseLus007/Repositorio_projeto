@@ -6,7 +6,7 @@ class PedidosForm(forms.ModelForm):
     cartao= 'Cartão'
     escolhasPag=[('','Selecione'),(dinheiro, 'Dinheiro'), (cartao,'Debito'),(cartao,'Credito')]
     pratos=[('','Selecione'),('Virado a Paulista', 'Virado a Paulista'),('Bife','Bife'),('Filé de frango','Filé de frango'),('Frango ao molho','Frango ao molho'),('Carne de panela','Carne de panela'),('Figado acebolado','Figado acebolado'),('Bife acebolado','Bife acebolado'),('Feijoada','Feijoada'),('Calabresa','Calabresa')]
-    acompanhamentos=[('','Selecione'),("Banana frita, linguiça, ovo, couve (virado)","Banana frita, linguiça, ovo, couve (virado)"),('Legumes refogados','Legumes refogados'),('Escarola','Escarola'),('Fritas', 'Fritas')]
+    acompanhamentos=[('','Selecione'),('Banana Frita','Banana Frita'),('Linguça','Linguiça'),('Ovo','Ovo'),('Couve(virado)','Couve(virado)'),('Legumes refogados','Legumes refogados'),('Escarola','Escarola'),('Fritas', 'Fritas')]
     saladas=[('','Selecione'),('Alface e pepino','Alface e pepino'),('Repolho e cenoura','Repolho e cenoura')]
 
     nome_cliente=forms.CharField(label='Nome', 

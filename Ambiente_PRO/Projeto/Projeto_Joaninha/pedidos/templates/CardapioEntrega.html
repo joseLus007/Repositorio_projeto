@@ -1,3 +1,4 @@
+{% extends "base2.html" %}
 {% load static %}
 
 {% load widget_tweaks %}
@@ -36,7 +37,7 @@
         </div>
         <div class="colunas">
             <div class=" unido cardapio">
-                <h1>Cardapio</h1>
+                <h1>Cardápio</h1>
                 <p>Pratos</p>
                 <table>
                 <tr>
@@ -132,21 +133,31 @@
             <div class="unido formulario">
                 
                 <center><p>Pedido</p></center>
-                <form method="POST" novalidate>
-                    {% csrf_token %}
-                    <div class="form-control">
-                        <span class="required">{{form.as_p }}</span>
-                    </div>   
-                    <button type="button" class="fa fa-plus ">Concluir</button> 
-                        
+                <form method="POST" novalidate action="">
+                        {% csrf_token %}
+                        {% for field in form.visible_fields %}
+                          <div class="form-group{% if field.errors %} has-error {% endif%}">
+                            <label for="{{ field.id_for_label }}">
+                              {% if field.field.required %}
+                                <span class="required">{{ field.label }} </span>
+                              {% else %}
+                                {{ field.label }}
+                              {% endif %}
+                            </label>
+                            {% render_field field class="form-control" %}
+                            {% for error in field.errors %}
+                              <span class="text-muted">{{ error }}</span>
+                            {% endfor %}
+                          </div>
+                        {% endfor %}
+                        <center><button type="submit" class="btn btn-success">Concluir</button></center>
                 </form>
+                
                 
             </div>
         </div>
     </body>
 </html>
 {%endblock content%}
-<!-- <div class="form-control">
-        <span class="required">{{form.as_p }}</span>
-    </div>   
-    <button type="button" class="fa fa-plus ">Concluir</button>  -->
+
+
