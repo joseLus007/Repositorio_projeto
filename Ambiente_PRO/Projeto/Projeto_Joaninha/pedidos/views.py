@@ -1,8 +1,9 @@
-from django.shortcuts import render,get_object_or_404
+from django.shortcuts import render,get_object_or_404, redirect
 from django.views.generic import CreateView
 from .models import Pedidos
 from .forms import PedidosForm
 from django.urls import reverse_lazy
+from django.utils import timezone
 
 
 def pedidos_list(request):
@@ -19,6 +20,7 @@ def pedidos_detail(request,pk):
     obj=Pedidos.objects.get(pk=pk)
     context={'object':obj}
     return render(request,template_name,context)
+    
 def pedido_add(request):
     template_name="pedidosform.html"
     return render(request,template_name)
@@ -31,14 +33,16 @@ class PedidoCreate(CreateView):
 
 
 def pedido_create_view(request):
-    form = PedidosForm(request.POST or None)
-    if form.is_valid():
-        form.save()
-        form = PedidosForm()
-    context = {
-        'form': form
-    }
-    return render(request, "CardapioEntrega.html", context)
+    if request.method == 'POST':
+        form = PedidosForm(request.POST)
+        if form.is_valid():
+            Pedidos.horario = timezone.now()
+            form.save()
+            form = PedidosForm()
+            return redirect("/home/Agradecimentos/")
+    else:
+        form= PedidosForm()
+    return render(request, "CardapioEntrega.html", {'form': form})
 
 def deleteDado(request,pk):
     template_name='pedidos_list.html'

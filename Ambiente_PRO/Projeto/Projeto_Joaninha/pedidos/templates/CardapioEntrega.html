@@ -9,13 +9,12 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Cardápio</title>
-        <link rel="icon" type="imagem/png" href="{% static 'imagens/bob.png' %}" />
+        <link rel="icon" type="imagem/png" href="{% static 'imagens/bob.png' %}"/>
         <link href="https://fonts.googleapis.com/css?family=Volkhov&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/Centrega.css' %}" />
-        <script src="{%static 'js/Alerta.js' %}"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/Centrega.css' %}" />    
     </head>
-    <body>
+    <body>       
         <header>
                 <div class="menu"> 
                     <nav>
@@ -133,7 +132,7 @@
             <div class="unido formulario">
                 
                 <center><p>Pedido</p></center>
-                <form method="POST" novalidate action="">
+                <form action="" method="POST" novalidate>
                         {% csrf_token %}
                         {% for field in form.visible_fields %}
                           <div class="form-group{% if field.errors %} has-error {% endif%}">
@@ -150,7 +149,8 @@
                             {% endfor %}
                           </div>
                         {% endfor %}
-                        <center><button type="submit" class="btn btn-success">Concluir</button></center>
+                        <center><button type="submit" class="btn btn-success">Fazer Pedido</button></center>
+                
                 </form>
                 
                 
